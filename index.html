@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglês para Negócios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .accordion {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 10px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://www.iped.com.br/img/cursos/m_116621.jpg" alt="Imagem do curso">
+
+    <h1>Inglês para Negócios</h1>
+    <p>Você aprenderá como se comunicar de forma mais eficaz em situações de negócios, usando o business vocabulary nas apresentações, reuniões, negociações, escrita de e-mails, currículo e muito mais.</p>
+
+    <button class="accordion">Conteúdo do curso</button>
+    <div class="panel">
+        <button class="accordion">Capítulo 1</button>
+        <div class="panel">
+            <ul>
+                <li>Aula 1: Apresentações pessoais</li>
+                <li>Aula 2: Frases prontas</li>
+                <li>Aula 3: First impressions</li>
+                <li>Aula 4: O que é business vocabulary?</li>
+                <li>Aula 5: Por que usar?</li>
+                <li>Aula 6: Toolkit</li>
+                <li>Aula 7: Who are you?</li>
+                <li>Aula 8: What can you do?</li>
+                <li>Aula 9: Your CV matters!</li>
+                <li>Aula 10: Expressing opinions</li>
+                <li>Aula 11: Argument x Discussion</li>
+                <li>Aula 12: Argumentation tools</li>
+                <li>Aula 13: Where is it?</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Capítulo 2</button>
+        <div class="panel">
+            <ul>
+                <li>Aula 14: Useful vocabulary</li>
+                <li>Aula 15: Where exactly?</li>
+                <li>Aula 16: What is best in life?</li>
+                <li>Aula 17: Comparisons</li>
+                <li>Aula 18: Better or best?</li>
+                <li>Aula 19: Simple past</li>
+                <li>Aula 20: Irregular verbs</li>
+                <li>Aula 21: Past dialogues</li>
+                <li>Aula 22: Business e-mails</li>
+                <li>Aula 23: Texting</li>
+                <li>Aula 24: Schedules</li>
+                <li>Aula 25: Hello?</li>
+                <li>Aula 26: Can you repeat that?</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Capítulo 3</button>
+        <div class="panel">
+            <ul>
+                <li>Aula 27: Note taking</li>
+                <li>Aula 28: Giving orders</li>
+                <li>Aula 29: Delegating</li>
+                <li>Aula 30: Loud and clear!</li>
+                <li>Aula 31: Let’s do business!</li>
+                <li>Aula 32: It’s a bargain!</li>
+                <li>Aula 33: It’s a deal!</li>
+                <li>Aula 34: Savings and accounts</li>
+                <li>Aula 35: Numbers</li>
+                <li>Aula 36: Money talk</li>
+                <li>Aula 37: Dos and Don’ts</li>
+                <li>Aula 38: Body language</li>
+                <li>Aula 39: Case study</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
